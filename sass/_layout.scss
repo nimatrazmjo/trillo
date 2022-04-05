@@ -22,9 +22,13 @@
 .sidebar {
   background-color: var(--color-dark-1);
   flex: 0 0 18%; // flex-grow flex-shrink flex-base
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
   background-color: #fff;
   flex: 1; // take the remaining space
+  height: 80rem;
 }
