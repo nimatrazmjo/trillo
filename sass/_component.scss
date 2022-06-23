@@ -178,3 +178,85 @@
   text-align: center;
   padding: 2.5rem;
 }
+
+/////////////////////////////////
+// Gallery
+////////////////////////////////
+.gallery {
+  display: flex;
+  &__item {
+  }
+  &__photo {
+    display: block;
+    width: 100%;
+  }
+}
+
+/////////////////////////////////
+// Overview
+////////////////////////////////
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray-light-2);
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+  }
+  &__stars {
+    /**
+     * Stars
+      flex:1; will take the entire space
+      margin-right:auto; will take only the space of the element
+      for testing purpose you can put a background color on both of the elements
+     */
+     display: flex;
+    margin-right: auto; //flex: 1;
+    
+  }
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill:   var(--color-primary);
+  }
+  &__location {
+    display: flex;
+    font-size: 1.2rem;
+    vertical-align: center;
+    fill: var(--color-primary);
+  }
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 0.5rem;
+    fill: var(--color-primary);
+  }
+  &__rating {
+    
+    background-color: var(--color-primary);
+    margin-left: 3rem;
+    color: white;
+    align-self: stretch;
+    padding: 0 2.25rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
+    margin-right: 1rem;
+    margin-bottom: -0.5rem;
+  }
+  &__rating-count {
+    font-size: 2.0.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
