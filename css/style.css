@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 COLORS
 
@@ -125,6 +126,7 @@ body {
 }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-gray-light-1);
@@ -132,7 +134,6 @@ body {
 }
 
 .description {
-  font-size: 1.4rem;
   flex: 0 0 60%;
   margin-right: 2.5rem;
   background-color: #fff;
@@ -141,7 +142,6 @@ body {
 }
 
 .user-reviews {
-  background-color: yellowgreen;
   flex: 1;
 }
 
@@ -426,6 +426,57 @@ body {
 }
 .recommend__photo:not(last-child) {
   margin-right: -1.5rem;
+}
+
+.review {
+  background-color: #fff;
+  padding: 3rem;
+  margin-bottom: 4.5rem;
+}
+.review__text {
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+}
+.review__user {
+  display: flex;
+  align-items: center;
+}
+.review__user-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: auto;
+}
+.review__photo {
+  height: 4.75rem;
+  width: 4.75rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-right: 1.5rem;
+}
+.review__user-name {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--color-gray-dark-3);
+}
+.review__user-date {
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: var(--color-gray-dark-3);
+}
+.review__rating {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: var(--color-primary);
+}
+.review::before {
+  content: ””;
+  font-size: 20rem;
+  position: absolute;
+  color: var(--color-primary-light);
 }
 
 /*# sourceMappingURL=style.css.map */
